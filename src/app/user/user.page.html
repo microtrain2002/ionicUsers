@@ -38,7 +38,8 @@
             <ion-icon name="create"></ion-icon>
           </ion-fab-button>
     
-          <ion-fab-button color="danger" [routerLink]="['/user-delete', user._id]">
+          <!-- <ion-fab-button color="danger" [routerLink]="['/user-delete', user._id]"> -->
+          <ion-fab-button color="danger" (click)="deleteUser(user._id)">
             <ion-icon name="trash"></ion-icon>
           </ion-fab-button>
     
