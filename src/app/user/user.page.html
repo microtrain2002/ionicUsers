@@ -29,9 +29,9 @@
     
       <ion-fab vertical="bottom" horizontal="end">
         <ion-fab-button  color="secondary">
-          <ion-icon name="arrow-dropleft"></ion-icon>
+          <ion-icon name="arrow-back-circle-outline"></ion-icon>
         </ion-fab-button>
-    
+
         <ion-fab-list side="start" *ngIf="user">
     
           <ion-fab-button color="light" [routerLink]="['/user-edit', user._id]">
@@ -42,7 +42,7 @@
           <ion-fab-button color="danger" (click)="deleteUser(user._id)">
             <ion-icon name="trash"></ion-icon>
           </ion-fab-button>
-    
+
         </ion-fab-list>
       </ion-fab>
 

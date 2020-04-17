@@ -21,7 +21,7 @@ export class UserPage implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(params=>{
-      console.log(params['userId']);
+      // console.log(params['userId']);
       this.getUser(params['userId']);
     });
   }
@@ -29,7 +29,7 @@ export class UserPage implements OnInit {
   getUser(id:string):void {
     this.usersService.getUser(id).subscribe(
       (response:any)=>{
-        console.log(response);
+        // console.log(response);
         this.user = response.user;
       }
     );
